@@ -18,7 +18,7 @@ public class TwoSum {
                 return result;
             }
             differenceMap.put(num,i);
-            System.out.println("map : "+differenceMap);
+           // System.out.println("map : "+differenceMap);
         }
 
         return result;

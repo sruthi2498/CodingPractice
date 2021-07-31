@@ -5,7 +5,7 @@ import java.util.*;
 /*
 https://leetcode.com/problems/remove-duplicates-from-sorted-array/
 */
-public class ContainsDuplicate {
+public class RemoveDuplicateFromSorted {
 
     public static int removeDuplicates(int[] nums) {
         int i = 0;

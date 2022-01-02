@@ -1,1 +1,1 @@
-# LeetcodePractice
+# Data Structures and Algorithms

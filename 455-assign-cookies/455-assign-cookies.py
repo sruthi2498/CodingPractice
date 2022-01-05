@@ -13,6 +13,6 @@ class Solution:
                 content+=1
                 i+=1
             j+=1
-        print(i,j,content)
+        # print(i,j,content)
         return content
                 

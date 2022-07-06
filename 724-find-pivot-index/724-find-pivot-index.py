@@ -7,8 +7,7 @@ class Solution:
         i = 0
         while i<len(nums):
             leftSum = 0 if i==0 else nums[i-1]
-            rightSum = nums[-1] - nums[i]
-            if leftSum==rightSum:
+            if leftSum==nums[-1] - nums[i]:
                 return i
             i+=1
         return -1

@@ -10,5 +10,5 @@ class Solution:
                 l+=1
             else:
                 r-=1
-        print(l,r)
+        # print(l,r)
         return max(l,r)

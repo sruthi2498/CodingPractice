@@ -6,14 +6,14 @@ class Solution:
         i = 0
         s = 0
         while i<len(boxTypes) and count<truckSize:
-            print("count",count,"s",s, "box",boxTypes[i])
+            # print("count",count,"s",s, "box",boxTypes[i])
             if count+boxTypes[i][0]<=truckSize:
-                print(i,"can fit full")
+                # print(i,"can fit full")
                 count+=boxTypes[i][0]
                 s+=(boxTypes[i][0]*boxTypes[i][1])
             else:
                 remaining = truckSize - count
-                print(i,"can take only ",remaining)
+                # print(i,"can take only ",remaining)
                 count+=remaining
                 s+=(remaining*boxTypes[i][1])
             i+=1

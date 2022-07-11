@@ -13,7 +13,7 @@ class Solution:
             nums[j]=t
             i+=1
             j-=1
-        print(nums)
+        # print(nums)
         i = 0 
         j = k-1
         while i<=j:
@@ -22,7 +22,7 @@ class Solution:
             nums[j]=t
             i+=1
             j-=1
-        print(nums)
+        # print(nums)
         i = k
         j = n-1
         while i<=j:
@@ -31,4 +31,4 @@ class Solution:
             nums[j]=t
             i+=1
             j-=1
-        print(nums)
+        # print(nums)

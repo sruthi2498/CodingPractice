@@ -10,9 +10,9 @@ class Solution:
         while temp!=None:
             s+=1
             temp = temp.next
-        print(s)
+        # print(s)
         n = s-n+1
-        print(n)
+        # print(n)
         if n==0:
             return head
         if n==1:

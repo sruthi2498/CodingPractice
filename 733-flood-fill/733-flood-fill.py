@@ -12,6 +12,7 @@ class Solution:
             i,j = stack.pop(0)
             if image[i][j]==startColor:
                 # print(i,j)
+                image[i][j]=color
                 toBeColored.append([i,j])
             visited.add((i,j))
             if i-1>=0 and image[i-1][j]==startColor and (i-1,j) not in visited:
@@ -22,7 +23,7 @@ class Solution:
                 stack.append([i,j-1])
             if j+1<m and image[i][j+1]==startColor and (i,j+1) not in visited:
                 stack.append([i,j+1])
-        for i,j in toBeColored:
-            image[i][j] = color
+        # for i,j in toBeColored:
+        #     image[i][j] = color
         return image
                 

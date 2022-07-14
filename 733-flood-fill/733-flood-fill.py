@@ -11,7 +11,7 @@ class Solution:
             # print(stack)
             i,j = stack.pop(0)
             if image[i][j]==startColor:
-                print(i,j)
+                # print(i,j)
                 toBeColored.append([i,j])
             visited.add((i,j))
             if i-1>=0 and image[i-1][j]==startColor and (i-1,j) not in visited:

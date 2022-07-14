@@ -6,11 +6,8 @@ class Solution:
         startColor = image[sr][sc]
         visited = set()
         while len(stack) > 0 :
-            # print(stack)
             i,j = stack.pop(0)
-            if image[i][j]==startColor:
-                # print(i,j)
-                image[i][j]=color
+            image[i][j]=color
             visited.add((i,j))
             if i-1>=0 and image[i-1][j]==startColor and (i-1,j) not in visited:
                 stack.append([i-1,j])

@@ -8,6 +8,5 @@ class Solution:
         total = 0
         for i in range(len(grid)):
             for j in range(len(grid)):
-                diff = min(rowMax[i],colMax[j]) - grid[i][j]
-                total+=diff
+                total+=(min(rowMax[i],colMax[j]) - grid[i][j])
         return total

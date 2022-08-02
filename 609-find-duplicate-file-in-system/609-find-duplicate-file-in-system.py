@@ -20,7 +20,7 @@ class Solution:
     
     def findDuplicate(self, paths: List[str]) -> List[List[str]]:
         self.parsePaths(paths)
-        print(self.data)
+        # print(self.data)
         result = [ v for k,v in self.data.items() if len(v)>1]
         return result
             

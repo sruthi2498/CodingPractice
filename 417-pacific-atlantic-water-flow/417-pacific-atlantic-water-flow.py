@@ -36,10 +36,7 @@ class Solution:
                 
                 if j<m-1 and heights[i][j+1]>=heights[i][j]:
                     graph[self.getKey(i,j)].append(self.getKey(i,j+1))
-            
-        # for k,v in graph.items():
-        #     print(k,v)
-        
+
     
         p = set()
         queue = ["p"]
@@ -49,7 +46,7 @@ class Solution:
             for neighb in graph[node]:
                 if neighb not in p:
                     queue.append(neighb)
-        # print(p)
+
         q = set()
         
         queue = ["a"]

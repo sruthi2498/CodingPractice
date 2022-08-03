@@ -1,7 +1,10 @@
 class Solution:
+    def __init__(self):
+        self.pars = {1:["()"]}
     def generateParenthesis(self, n: int) -> List[str]:
-        if n==1:
-            return ["()"]
+        if n in self.pars:
+            return self.pars[n]
+        
         result = set()
         prev = self.generateParenthesis(n-1)
         for p in prev:
@@ -14,5 +17,6 @@ class Solution:
             for f in first:
                 for s in second:
                     result.add(f+s)
-        return list(result)
+        self.pars[n] = list(result)
+        return self.pars[n]
         

@@ -10,13 +10,14 @@ class Solution:
         if n==1:
             return self.map[digits[0]]
         
+        if digits in self.cache:
+            return self.cache[digits]
         res = []
-        
         
         for a in self.map[digits[0]]:
             for b in self.letterCombinations(digits[1:]):
                 res.append(a+b)
-        
+        self.cache[digits] = res
         return res
         
         

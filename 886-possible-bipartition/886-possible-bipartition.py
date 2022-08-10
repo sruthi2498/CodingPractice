@@ -4,7 +4,7 @@ class Solution:
         for a,b in dislikes:
             graph[a].append(b)
             graph[b].append(a)
-        print(graph)
+        # print(graph)
         
         
         visited = set()

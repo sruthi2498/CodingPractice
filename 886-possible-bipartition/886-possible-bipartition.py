@@ -18,7 +18,7 @@ class Solution:
                 first.add(i)
             while queue:
                 node = queue.pop()
-                print("node",node)
+                # print("node",node)
                 visited.add(node)
 
                 for neighb in graph[node]:
@@ -31,7 +31,7 @@ class Solution:
                             first.add(neighb)
                 # print("first",first,"second",second)
                     
-        print(first,second)
+        # print(first,second)
         for a,b in dislikes:
             if (a in first and b in first ) or (a in second and b in second ):
                 return False

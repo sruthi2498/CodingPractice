@@ -17,8 +17,8 @@ class Solution:
                     opt[i][j] = min(opt[i][j], 
                                    opt[i-1][k] + moveCost[grid[i-1][k]][j]
                                    + grid[i][j])
-        for row in opt:
-            print(row)
+        # for row in opt:
+        #     print(row)
         result = math.inf    
         for j in range(m):
             result = min(result, opt[-1][j])

@@ -13,11 +13,11 @@ class Solution:
         prev = node
         temp = prev.next
         while temp and temp.next:
-            print("prev ",prev.val, "temp ",temp.val)
+            # print("prev ",prev.val, "temp ",temp.val)
             prev.val = temp.val
             prev = temp
             temp = temp.next
-        print("prev ",prev.val, "temp ",temp.val)
+        # print("prev ",prev.val, "temp ",temp.val)
             
         if not temp:
             prev = None 

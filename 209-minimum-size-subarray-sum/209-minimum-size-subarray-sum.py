@@ -4,7 +4,7 @@ class Solution:
         n = len(nums)
         for i in range(1,n):
             prefixSum.append(nums[i]+prefixSum[i-1])
-        print(prefixSum)
+        # print(prefixSum)
         if prefixSum[-1]<target:
             return 0
         i = 0
@@ -14,7 +14,7 @@ class Solution:
         j = 0
         bestWindow = i-j+1
         while j<n and i<n:
-            print("i = ",i," j = ",j)
+            # print("i = ",i," j = ",j)
             currSum = prefixSum[i]-prefixSum[j]
             while currSum>target and j<=i:
                 j+=1
@@ -25,5 +25,3 @@ class Solution:
             bestWindow = min(bestWindow,windowSize)
             i+=1
         return bestWindow
-            
-        print(i)

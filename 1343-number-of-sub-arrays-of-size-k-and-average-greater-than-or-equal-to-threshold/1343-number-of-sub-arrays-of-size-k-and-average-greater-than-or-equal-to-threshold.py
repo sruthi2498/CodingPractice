@@ -11,7 +11,7 @@ class Solution:
         currAvg = currSum/k
         if currAvg>=threshold:
             count+=1
-        print("currAvg = ",currAvg)
+        # print("currAvg = ",currAvg)
         while i<n:
             end = arr[i]
             start = arr[i-k]

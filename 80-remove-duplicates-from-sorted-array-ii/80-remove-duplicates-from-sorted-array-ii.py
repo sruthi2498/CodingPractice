@@ -11,7 +11,7 @@ class Solution:
                 nums[j]="F"
                 j+=1
             i = j
-        print(nums)
+        # print(nums)
         
         i = 0
         while i<n:
@@ -25,7 +25,7 @@ class Solution:
                 temp = nums[i]
                 nums[i]= nums[j]
                 nums[j]= temp
-                print(nums)
+                # print(nums)
             i +=1
             
         k = 0

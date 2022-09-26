@@ -5,8 +5,8 @@ class Solution:
         
         n = len(buses)
         m = len(passengers)
-        print(buses)
-        print(passengers)
+        # print(buses)
+        # print(passengers)
         
         i = 0
         j = 0

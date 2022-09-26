@@ -19,11 +19,11 @@ class Solution:
         for i,a in enumerate(edges):
             if a>-1:
                 graph[i].append(a)
-        print(graph)
+        # print(graph)
         dist1 = self.bfs(graph,n,node1)
         dist2 = self.bfs(graph,n,node2)
-        print(node1,dist1)
-        print(node2,dist2)
+        # print(node1,dist1)
+        # print(node2,dist2)
         minDist = math.inf
         minNode = -1
         for i,(a,b) in enumerate(list(zip(dist1,dist2))):

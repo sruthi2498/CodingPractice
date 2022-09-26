@@ -42,7 +42,7 @@ class Solution:
         n = len(board)
         m = len(board[0])
         groups = self.dfs(board,n,m)
-        print(groups)
+        # print(groups)
         
         for group in groups:
             flip = True
@@ -50,7 +50,7 @@ class Solution:
                 if i==0 or i==n-1 or j==0 or j==m-1:
                     flip = False
                     break
-            print(flip)
+            # print(flip)
             if flip:
                 for i,j in group:
                     board[i][j]="X"

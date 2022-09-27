@@ -6,8 +6,6 @@ class Solution:
             prefixSum.append(nums[i]+prefixSum[i-1])
         count = 0
         for i in range(n-1):
-            left = prefixSum[i]
-            right = prefixSum[n-1]-prefixSum[i]
-            if left>=right:
+            if prefixSum[i]>=prefixSum[n-1]-prefixSum[i]:
                 count+=1
         return count

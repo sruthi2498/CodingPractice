@@ -21,8 +21,8 @@ class Solution:
                 if(char_map[s[j]][1] >end):
                     end = char_map[s[j]][1]
                 j+=1
-            print(s[start:end+1],len(s[start:end+1]))
-            result.append(len(s[start:end+1]))
+            # print(s[start:end+1],len(s[start:end+1]))
+            result.append(end-start+1)
             i = end+1
         return result
         

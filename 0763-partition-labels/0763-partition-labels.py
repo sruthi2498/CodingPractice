@@ -18,7 +18,7 @@ class Solution:
             end = char_map[s[i]][1]
             j = start+1
             while j<end:
-                if(char_map[s[j]][1] >end):
+                if char_map[s[j]][1] >end :
                     end = char_map[s[j]][1]
                 j+=1
             # print(s[start:end+1],len(s[start:end+1]))

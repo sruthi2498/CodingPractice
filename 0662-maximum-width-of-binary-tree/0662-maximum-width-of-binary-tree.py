@@ -13,8 +13,10 @@ class Solution:
             self.depthDict[depth] = []
         if not root:
             return
-        
-        self.depthDict[depth].append([root.val,num])
+        if len(self.depthDict[depth])<=1:
+            self.depthDict[depth].append([root.val,num])
+        elif self.depthDict[depth][-1][1] < num:
+            self.depthDict[depth][-1] = [root.val,num]
         if root.left:
             self.__levelOrder__(root.left,depth+1, 2*num)
         

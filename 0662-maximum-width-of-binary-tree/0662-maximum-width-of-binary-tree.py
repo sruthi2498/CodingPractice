@@ -26,8 +26,6 @@ class Solution:
         self.__levelOrder__(root,0,1)
         maxWidth= 0
         for k,v in self.depthDict.items():
-            leftMost = v[0]
-            rightMost = v[-1]
-            if(rightMost[1]-leftMost[1]+1> maxWidth):
-                maxWidth =rightMost[1]-leftMost[1]+1
+            if(v[-1][1]-v[0][1]+1> maxWidth):
+                maxWidth =v[-1][1]-v[0][1]+1
         return maxWidth

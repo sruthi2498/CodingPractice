@@ -36,9 +36,9 @@ class Trie:
         
     def insert(self, word: str) -> None:
         exists,node,index = self.__search(word)
-        print("__search : ",exists)
+        # print("__search : ",exists)
         if not exists:
-            print("insert from ",index)
+            # print("insert from ",index)
             i = index
             n = len(word)
             while i<n:
@@ -46,7 +46,7 @@ class Trie:
                 node = node.getChild(word[i])
                 i+=1
             node.setWordEnd()
-            print("inserted",word)
+            # print("inserted",word)
         else:
             node.setWordEnd()
             

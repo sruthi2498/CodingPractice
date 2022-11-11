@@ -17,15 +17,10 @@ class Solution:
             return False
         
         while queue:
-            # print(queue)
             node = queue.pop(0)
-            # print("Starting with ",node)
             visited.add(node)
             for neighb in graph[node]:
-                # print("\tRemoving it from ",neighb)
                 incoming_edges[neighb].remove(node)
                 if not incoming_edges[neighb] and neighb not in visited:
                     queue.append(neighb)
-        # print(incoming_edges)  
-        # print("visited",visited)
         return len(visited)==numCourses

@@ -81,17 +81,17 @@ class Trie:
 
 class Solution:
     def longestWord(self, words: List[str]) -> str:
-        trie = Trie()
-        for word in words:
-            trie.insert(word)
-            
+        # trie = Trie()
+        # for word in words:
+        #     trie.insert(word)
+        words_set = set(words) 
         maxLen = 0
         maxWord = ""
         words.sort()
         for word in words:
             n = len(word)
             i = n-1
-            while i>0 and trie.search(word[:i]):
+            while i>0 and word[:i] in words_set:
                 i-=1
             if i<=0 and n>maxLen:
                 maxLen = n

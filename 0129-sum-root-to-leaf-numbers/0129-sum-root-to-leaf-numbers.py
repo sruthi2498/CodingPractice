@@ -33,5 +33,5 @@ class Solution:
         if not root:
             return 0
         paths = self.getAllPaths(root,[root.val])
-        print(self.res)
+        # print(self.res)
         return sum(self.res)

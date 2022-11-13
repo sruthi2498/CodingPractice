@@ -33,7 +33,7 @@ class Solution:
         
         maxs.reverse()
         # print(digits)
-        print(maxs)
+        # print(maxs)
         mins= []
         i = 0
         minSoFar = math.inf
@@ -43,7 +43,7 @@ class Solution:
                 index = i
             mins.append([minSoFar,index])
             i+=1
-        print(mins)
+        # print(mins)
         
         i = 0
         maxDiff = -math.inf
